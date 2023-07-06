@@ -30,17 +30,35 @@
   text-align: center;
 }
 
-.actions button {
+.actions .tofavorites {
   font: inherit;
   cursor: pointer;
   color: #77002e;
   border: 1px solid #77002e;
   background-color: transparent;
+  margin: 0.5rem;
   padding: 0.5rem 1.5rem;
   border-radius: 4px;
 }
 
-.actions button:hover,
-.actions button:active {
+.actions .delete {
+  font: inherit;
+  cursor: pointer;
+  color: white;
+  border: 1px solid #77002e;
+  background-color: #77002e;
+  margin: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+}
+
+.actions .tofavorites:hover,
+.actions .tofavorites:active {
+  background-color: #ffe2ed;
+}
+
+.actions .delete:hover,
+.actions .delete:active {
+  color: #77002e;
   background-color: #ffe2ed;
 }
