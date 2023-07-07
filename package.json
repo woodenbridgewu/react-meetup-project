@@ -1,6 +1,6 @@
 {
-  "name": "reactMeetupProject",
-  "homepage": "https://woodenbridgewu.github.io/reactMeetupProject/",
+  "name": "react-meetup-project",
+  "homepage": "https://woodenbridgewu.github.io/react-meetup-project",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

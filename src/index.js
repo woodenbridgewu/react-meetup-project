@@ -10,7 +10,7 @@ import { FavoritesContextProvider } from "./store/favorites-context";
 
 const router = createBrowserRouter([
   {
-    path: "/reactMeetupProject",
+    path: "/",
     element: <App />,
     children: [
       { path: "allmeetups", element: <AllMeetups /> },
