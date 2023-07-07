@@ -10,7 +10,12 @@ function Favorites() {
   if (favoritesCtx.totalFavorites === 0) {
     content = <p>You got no favorites yet. Start adding some?</p>;
   } else {
-    content = <MeetupList meetups={favoritesCtx.favorites}></MeetupList>;
+    content = (
+      <MeetupList
+        meetups={favoritesCtx.favorites}
+        showDeleteButton={false}
+      ></MeetupList>
+    );
   }
   return (
     <section>

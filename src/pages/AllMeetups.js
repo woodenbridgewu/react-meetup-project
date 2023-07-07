@@ -36,7 +36,7 @@ function AllMeetups() {
   return (
     <section>
       <h1>All Meetups</h1>
-      <MeetupList meetups={loadedMeetups} />
+      <MeetupList meetups={loadedMeetups} showDeleteButton={true} />
     </section>
   );
 }

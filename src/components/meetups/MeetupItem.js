@@ -46,9 +46,11 @@ function MeetupItem(props) {
           >
             {itemIsFavorite ? "Remove from Favorites" : "To Favorites"}
           </button>
-          <button className={classes.delete} onClick={deleteMeetup}>
-            Delete
-          </button>
+          {props.showDeleteButton && (
+            <button className={classes.delete} onClick={deleteMeetup}>
+              Delete
+            </button>
+          )}
         </div>
       </Card>
     </li>
