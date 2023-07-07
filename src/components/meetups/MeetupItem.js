@@ -7,6 +7,13 @@ function MeetupItem(props) {
   const favoritesCtx = useContext(FavoritesContext);
 
   const itemIsFavorite = favoritesCtx.itemIsFavorite(props.id);
+  function deleteMeetup() {
+    fetch(
+      `https://react-review-521ee-default-rtdb.firebaseio.com/meetups/${props.id}.json`,
+      { method: "DELETE" }
+    );
+  }
+
   function toggleFavoriteStatusHandler() {
     if (itemIsFavorite) {
       favoritesCtx.removeFavorite(props.id);
@@ -39,7 +46,9 @@ function MeetupItem(props) {
           >
             {itemIsFavorite ? "Remove from Favorites" : "To Favorites"}
           </button>
-          <button className={classes.delete}>Delete</button>
+          <button className={classes.delete} onClick={deleteMeetup}>
+            Delete
+          </button>
         </div>
       </Card>
     </li>
